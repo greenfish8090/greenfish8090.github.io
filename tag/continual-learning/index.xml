@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Continual Learning | Pranav Balaji</title>
-    <link>https://greenfish8090.github.io/tag/continual-learning/</link>
-      <atom:link href="https://greenfish8090.github.io/tag/continual-learning/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://pranavbalaji.me/tag/continual-learning/</link>
+      <atom:link href="https://pranavbalaji.me/tag/continual-learning/index.xml" rel="self" type="application/rss+xml" />
     <description>Continual Learning</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 20 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 05 Dec 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://greenfish8090.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://pranavbalaji.me/media/icon_hu4c4ccb377aa000bcc0828e3460554857_12725_512x512_fill_lanczos_center_3.png</url>
       <title>Continual Learning</title>
-      <link>https://greenfish8090.github.io/tag/continual-learning/</link>
+      <link>https://pranavbalaji.me/tag/continual-learning/</link>
     </image>
     
     <item>
       <title>Paraphrase Generator</title>
-      <link>https://greenfish8090.github.io/project/paraphraser/</link>
-      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://greenfish8090.github.io/project/paraphraser/</guid>
+      <link>https://pranavbalaji.me/project/paraphrase-generator/</link>
+      <pubDate>Sun, 05 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://pranavbalaji.me/project/paraphrase-generator/</guid>
       <description>&lt;p&gt;In the domain of Natural Language Processing, it is unheard of for models to be trained on multiple
 tasks sequentially. This is because after the first task, there is
 a significant dip in performance on the first task while training

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pranav Balaji</title>
-    <link>https://greenfish8090.github.io/</link>
-      <atom:link href="https://greenfish8090.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://pranavbalaji.me/</link>
+      <atom:link href="https://pranavbalaji.me/index.xml" rel="self" type="application/rss+xml" />
     <description>Pranav Balaji</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 20 Apr 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://greenfish8090.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://pranavbalaji.me/media/icon_hu4c4ccb377aa000bcc0828e3460554857_12725_512x512_fill_lanczos_center_3.png</url>
       <title>Pranav Balaji</title>
-      <link>https://greenfish8090.github.io/</link>
+      <link>https://pranavbalaji.me/</link>
     </image>
     
     <item>
       <title>Sign Language Translation</title>
-      <link>https://greenfish8090.github.io/project/slt/</link>
+      <link>https://pranavbalaji.me/project/sign-language-translation/</link>
       <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://greenfish8090.github.io/project/slt/</guid>
+      <guid>https://pranavbalaji.me/project/sign-language-translation/</guid>
       <description>&lt;p&gt;To better help bridge the gap between the hearing and speech impaired community and us, we sought to implement Sign Language Translation as part of our Machine Learning course.&lt;br&gt;
 &lt;br&gt;
 What most people think of when the problem is stated, is designing a model that takes in an image containing a static gesture being signed and outputs the &amp;ldquo;message&amp;rdquo; being contained in it. While it is definitely a solid first step, this is not at all representative of the real world problem.&lt;br&gt;
@@ -36,9 +36,9 @@ We tried different configurations of hyperparameters and ran training for ~1.5 h
     
     <item>
       <title>Paraphrase Generator</title>
-      <link>https://greenfish8090.github.io/project/paraphraser/</link>
-      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://greenfish8090.github.io/project/paraphraser/</guid>
+      <link>https://pranavbalaji.me/project/paraphrase-generator/</link>
+      <pubDate>Sun, 05 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://pranavbalaji.me/project/paraphrase-generator/</guid>
       <description>&lt;p&gt;In the domain of Natural Language Processing, it is unheard of for models to be trained on multiple
 tasks sequentially. This is because after the first task, there is
 a significant dip in performance on the first task while training
@@ -53,10 +53,740 @@ Check out the slides, paper and the code on GitHub for more details!&lt;/p&gt;
     </item>
     
     <item>
+      <title>Ray Tracing</title>
+      <link>https://pranavbalaji.me/project/ray-tracing/</link>
+      <pubDate>Mon, 26 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://pranavbalaji.me/project/ray-tracing/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Raytracing is an advanced and computing-intensive method of generating graphics. Unlike traditional methods of generating objects in 3D space, this method can yield much more accurate and realistic results with
+the caviat of extremely high processing requirement. While the type of raytracing we have made is only suitable for still objects due to rendering times, some versions of ray tracing or pseudo raytracing exist that
+can be used for realtime simulations.&lt;/p&gt;
+&lt;h1 id=&#34;initial-construction&#34;&gt;Initial Construction&lt;/h1&gt;
+&lt;p&gt;We can start from the basics. Raytracing, in short, is the method of casting rays at each individual pixel on a &amp;lsquo;screen&amp;rsquo; in front of a scene of objects in the hopes of it hitting an object. If it does, it retrieves
+the &amp;lsquo;data&amp;rsquo; of the point of the object it hit and using that prints out a specific color on the screen. This is done for every single pixel present on screen.
+The result is therefore extremely accurate but incredibly time-wasting.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-diagrammatic-representation-of-raytracing&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Diagrammatic representation of raytracing&#34; srcset=&#34;
+               /project/ray-tracing/images/theory1_hu7c949abe993a682a073b51991e0e56d0_51935_6b73b1bf6d5d0dd03bc488cf6744e2c3.webp 400w,
+               /project/ray-tracing/images/theory1_hu7c949abe993a682a073b51991e0e56d0_51935_d1e5ddcf50e2f18efaa9dc10e601d59c.webp 760w,
+               /project/ray-tracing/images/theory1_hu7c949abe993a682a073b51991e0e56d0_51935_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://pranavbalaji.me/project/ray-tracing/images/theory1_hu7c949abe993a682a073b51991e0e56d0_51935_6b73b1bf6d5d0dd03bc488cf6744e2c3.webp&#34;
+               width=&#34;435&#34;
+               height=&#34;298&#34;
+               loading=&#34;lazy&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Diagrammatic representation of raytracing
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;This is a simple enough strategy to start off with. The complexity comes in the data required for the color of each pixel. The first issue is to detect whether a ray is actually hitting an object. This problem is solved
+using standard matrix geometrical calculations based on the normal of a triangle, which most objects are made out of. Of course, customized algorithms for different types of solids can be made similarly.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-drawing-a-basic-sphere-with-only-hit-detection-background-for-display-purposes&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Drawing a basic sphere with only hit detection; Background for display purposes&#34; srcset=&#34;
+               /project/ray-tracing/images/theory2_hu519584dde167b21f9a9ada34b613503b_22507_5302a9d09f88617d88904826cedac17c.webp 400w,
+               /project/ray-tracing/images/theory2_hu519584dde167b21f9a9ada34b613503b_22507_171be7db506f2f73d8bd6cf3ee69278b.webp 760w,
+               /project/ray-tracing/images/theory2_hu519584dde167b21f9a9ada34b613503b_22507_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://pranavbalaji.me/project/ray-tracing/images/theory2_hu519584dde167b21f9a9ada34b613503b_22507_5302a9d09f88617d88904826cedac17c.webp&#34;
+               width=&#34;696&#34;
+               height=&#34;754&#34;
+               loading=&#34;lazy&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Drawing a basic sphere with only hit detection; Background for display purposes
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;Now this process becomes extremely intensive very quickly and will take too long per frame to render, so a way out of this predicament is to split the work into multiple threads. A compute shader can accomplish This
+but dividing up and workspace into multiple work groups based on your graphics card and work on each one in seperate threads. This speeds up the process exponentially and eases up the work done by the CPU in calculations.
+A compute shader is fairly simple to set up, and for the purposes of OpenGL, we make a quad texture that covers the entire window onto which a texture is rendered and the compute shader draws pixels onto the texture 
+mentioned.&lt;br&gt;&lt;br&gt;
+Now this looks pretty ugly without a background, so we added a skybox. It is a bounding box around a scene that appears to the viewer as the sky and background. Essentially, it is an arbitrarily large cube containing a warped texture or image to
+simulate atmosphere. We found this one off the internet:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-skybox&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Skybox&#34; srcset=&#34;
+               /project/ray-tracing/images/skybox_hub02d1d76b21430db1cddc82a407851ad_636666_57676f4f1aa6a2b8b49a8cae3b7ca886.webp 400w,
+               /project/ray-tracing/images/skybox_hub02d1d76b21430db1cddc82a407851ad_636666_e9ae2181a687a00c985c89c0507afd26.webp 760w,
+               /project/ray-tracing/images/skybox_hub02d1d76b21430db1cddc82a407851ad_636666_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://pranavbalaji.me/project/ray-tracing/images/skybox_hub02d1d76b21430db1cddc82a407851ad_636666_57676f4f1aa6a2b8b49a8cae3b7ca886.webp&#34;
+               width=&#34;755&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Skybox
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;Another task we can undertake in light bouncing. We can set up &amp;lsquo;mirror&amp;rsquo; objects that almost purely reflect light and iteratively create origin and destination rays from one surface to another to mimic reflection. The pixel color intensity is continuously
+modified by each bounce by a certain value until a &amp;lsquo;bounce limit&amp;rsquo; is reached. We can reach some impressive results with this alone. You can now see behind the camera as well.
+We gave the spheres a slight tint:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-reflection-limit--1&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Reflection limit = 1&#34; srcset=&#34;
+               /project/ray-tracing/images/mirror1_hu2fd6a90a443d86eb02e4932b1417ab88_962240_3e080aff4b16acc5e511e921e4a45cc1.webp 400w,
+               /project/ray-tracing/images/mirror1_hu2fd6a90a443d86eb02e4932b1417ab88_962240_112eddfa09b86a5474dcd1742bc06ffd.webp 760w,
+               /project/ray-tracing/images/mirror1_hu2fd6a90a443d86eb02e4932b1417ab88_962240_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://pranavbalaji.me/project/ray-tracing/images/mirror1_hu2fd6a90a443d86eb02e4932b1417ab88_962240_3e080aff4b16acc5e511e921e4a45cc1.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;758&#34;
+               loading=&#34;lazy&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Reflection limit = 1
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;This image was generated only by reflecting each camera ray once and finding the object at that location.
+That&amp;rsquo;s why you see the spheres inside the reflections in solid color. Increase that limit, and you can see reflections inside reflections, and so on:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-reflection-limit--2&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Reflection limit = 2&#34; srcset=&#34;
+               /project/ray-tracing/images/mirror2_hub298c61fbee88b3bc5c167a1e7ab7b88_986920_db23f72c9376e463f109ec1bbd8bd3ce.webp 400w,
+               /project/ray-tracing/images/mirror2_hub298c61fbee88b3bc5c167a1e7ab7b88_986920_f8436a941cd11e70c11592be86b0fb3e.webp 760w,
+               /project/ray-tracing/images/mirror2_hub298c61fbee88b3bc5c167a1e7ab7b88_986920_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://pranavbalaji.me/project/ray-tracing/images/mirror2_hub298c61fbee88b3bc5c167a1e7ab7b88_986920_db23f72c9376e463f109ec1bbd8bd3ce.webp&#34;
+               width=&#34;757&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Reflection limit = 2
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-reflection-limit--3&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Reflection limit = 3&#34; srcset=&#34;
+               /project/ray-tracing/images/mirror3_hu9e38af4b7fba604c64e6b26469703013_985295_20ff728247a7cc790713fc9e62c7a50e.webp 400w,
+               /project/ray-tracing/images/mirror3_hu9e38af4b7fba604c64e6b26469703013_985295_ed63018718e82712d2685c3847c64c00.webp 760w,
+               /project/ray-tracing/images/mirror3_hu9e38af4b7fba604c64e6b26469703013_985295_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://pranavbalaji.me/project/ray-tracing/images/mirror3_hu9e38af4b7fba604c64e6b26469703013_985295_20ff728247a7cc790713fc9e62c7a50e.webp&#34;
+               width=&#34;752&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Reflection limit = 3
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-purely-reflective-spheres-with-reflection-limit--5&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Purely reflective spheres with reflection limit = 5&#34; srcset=&#34;
+               /project/ray-tracing/images/mirror5pure_hu371c83f0923ee3b0719efdb0ac2df06d_986949_93cdaa2ef452e9b55335359a3010db9d.webp 400w,
+               /project/ray-tracing/images/mirror5pure_hu371c83f0923ee3b0719efdb0ac2df06d_986949_d6923c2b338a3b09c4350758e9c950cc.webp 760w,
+               /project/ray-tracing/images/mirror5pure_hu371c83f0923ee3b0719efdb0ac2df06d_986949_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://pranavbalaji.me/project/ray-tracing/images/mirror5pure_hu371c83f0923ee3b0719efdb0ac2df06d_986949_93cdaa2ef452e9b55335359a3010db9d.webp&#34;
+               width=&#34;748&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Purely reflective spheres with reflection limit = 5
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-strongly-tinted-spheres-with-reflection-limit--5&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Strongly tinted spheres with reflection limit = 5&#34; srcset=&#34;
+               /project/ray-tracing/images/mirror5strong_huaccbd2447c4facf1878617e3bfe7a438_924017_b80717a652f08339c1a37c187deab02a.webp 400w,
+               /project/ray-tracing/images/mirror5strong_huaccbd2447c4facf1878617e3bfe7a438_924017_8af822fd05a15498574b23a07dd56df9.webp 760w,
+               /project/ray-tracing/images/mirror5strong_huaccbd2447c4facf1878617e3bfe7a438_924017_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://pranavbalaji.me/project/ray-tracing/images/mirror5strong_huaccbd2447c4facf1878617e3bfe7a438_924017_b80717a652f08339c1a37c187deab02a.webp&#34;
+               width=&#34;752&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Strongly tinted spheres with reflection limit = 5
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;h1 id=&#34;phororealistic-rendering&#34;&gt;Phororealistic Rendering&lt;/h1&gt;
+&lt;p&gt;Now, we can process some basic lighting, which can be as simple as checking for light bouncing off an object. If we were to process every light ray emitted from a light source and check for objects it hit it would be
+too much even for a compute shader to process, so a workaround is to process light in the opposite direction, i.e from the camera eye to the light source. By checking the angle between a light ray and the ray we
+use to trace objects we can achieve some sort of primitive lighting.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-primitive-lighting-model&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Primitive lighting model&#34; srcset=&#34;
+               /project/ray-tracing/images/primitivelight_hu66bafff9906474a4e09cdc76f239dd04_26071_eaeac8ac74b1ac2180ae7d8a89170b4e.webp 400w,
+               /project/ray-tracing/images/primitivelight_hu66bafff9906474a4e09cdc76f239dd04_26071_86530e3da71e3e4e2fcf2bc1c573197d.webp 760w,
+               /project/ray-tracing/images/primitivelight_hu66bafff9906474a4e09cdc76f239dd04_26071_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://pranavbalaji.me/project/ray-tracing/images/primitivelight_hu66bafff9906474a4e09cdc76f239dd04_26071_eaeac8ac74b1ac2180ae7d8a89170b4e.webp&#34;
+               width=&#34;737&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Primitive lighting model
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;Now we are prepared to start applying James T Kajiya&amp;rsquo;s rendering equation to get better results for not just mirrors but all kinds of surfaces:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-rendering-equation&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Rendering Equation&#34; srcset=&#34;
+               /project/ray-tracing/images/equation1_hu7189097f7a5137ee25efba3847ae8433_6667_ac35dd946a3de4b3439a2b9d9e91c145.webp 400w,
+               /project/ray-tracing/images/equation1_hu7189097f7a5137ee25efba3847ae8433_6667_6f56c8954e3eafab8a20f558458d86e6.webp 760w,
+               /project/ray-tracing/images/equation1_hu7189097f7a5137ee25efba3847ae8433_6667_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://pranavbalaji.me/project/ray-tracing/images/equation1_hu7189097f7a5137ee25efba3847ae8433_6667_ac35dd946a3de4b3439a2b9d9e91c145.webp&#34;
+               width=&#34;506&#34;
+               height=&#34;72&#34;
+               loading=&#34;lazy&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Rendering Equation
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;The left hand side of the equation denotes the light coming out of a point x, and is eventually what we want. The first term on RHS is the light emitted. This would be 0 for
+most objects, non zero for light sources. The integral describes the light that the point accumulates from the surroundings. &lt;br&gt;
+The integral is applied over the hemisphere around the point in question, in every direction.
+The first function right after the integral is the bidirectional reflectance distribution function, BRDF. This function takes as input an incoming direction and an outgoing
+direction and spits out a value that correlates the two. For example, for a perfect mirror, the BRDF will produce 0 for every (incoming, outgoing) pair except the ones
+that have their angle of reflection equal to angle of incidence. Other surfaces will have a more complicated correlation.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-crude-visualization-of-what-the-brdf-does&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Crude visualization of what the BRDF does&#34; srcset=&#34;
+               /project/ray-tracing/images/brdf_hu38ddc46d20bf2130158801f17a01ae91_60135_f80a8087b5b77ea0d2b885b2e6099958.webp 400w,
+               /project/ray-tracing/images/brdf_hu38ddc46d20bf2130158801f17a01ae91_60135_119089c69c3e2efbaa357548feb25b1b.webp 760w,
+               /project/ray-tracing/images/brdf_hu38ddc46d20bf2130158801f17a01ae91_60135_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://pranavbalaji.me/project/ray-tracing/images/brdf_hu38ddc46d20bf2130158801f17a01ae91_60135_f80a8087b5b77ea0d2b885b2e6099958.webp&#34;
+               width=&#34;729&#34;
+               height=&#34;411&#34;
+               loading=&#34;lazy&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Crude visualization of what the BRDF does
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;Note that &amp;ldquo;incoming&amp;rdquo; in BRDF terminology is represented as outgoing rays in the diagram because this is ray tracing, i.e., tracing the ray backwards. What actually happens
+in nature is that all those &amp;ldquo;outgoing&amp;rdquo; rays in the diagram come to the surface, merge into the &amp;ldquo;incoming&amp;rdquo; ray (the dark one) and hit our eye.
+&lt;br&gt;&lt;br&gt;
+The term that comes right after it is the Lambert term which represents the Lambert cosine law.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-lambert-term-explanation&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Lambert term explanation&#34; srcset=&#34;
+               /project/ray-tracing/images/lambert_huc32f9443c91c777bc59e1645559bfcd7_15424_b6423564ec37cc8e7ef45608c5e4529c.webp 400w,
+               /project/ray-tracing/images/lambert_huc32f9443c91c777bc59e1645559bfcd7_15424_cd0918b64899945b7d76539213899f71.webp 760w,
+               /project/ray-tracing/images/lambert_huc32f9443c91c777bc59e1645559bfcd7_15424_1200x1200_fit_q75_h2_lanczos_2.webp 1200w&#34;
+               src=&#34;https://pranavbalaji.me/project/ray-tracing/images/lambert_huc32f9443c91c777bc59e1645559bfcd7_15424_b6423564ec37cc8e7ef45608c5e4529c.webp&#34;
+               width=&#34;480&#34;
+               height=&#34;360&#34;
+               loading=&#34;lazy&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Lambert term explanation
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;Finally, the last term is, well, the light coming from a given incoming direction. However will we calculate this? Simple, just apply the same rendering equation at that
+point&amp;hellip; and the point from there, and so on.
+You might start to see why this would be a problem. This is infinitely recursive and there is no way to expect a simulation to actually run this. So we have to make
+some compromises. One, we have to pick only a few rays to shoot out, not an infinite number of them. Second, we need a max reflections limit to prevent a ray from reflecting
+infinitely. Here is a very naive approach to realizing this solution:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-naive-solution&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Naive solution&#34; srcset=&#34;
+               /project/ray-tracing/images/naiveraytracer_hu212c79a801deafd3b7c5a01eb9a184a4_79159_9249e3365cb68025e34516aa44cabd41.webp 400w,
+               /project/ray-tracing/images/naiveraytracer_hu212c79a801deafd3b7c5a01eb9a184a4_79159_2d2f2193d74caa3a8b00ea1fbab3533b.webp 760w,
+               /project/ray-tracing/images/naiveraytracer_hu212c79a801deafd3b7c5a01eb9a184a4_79159_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://pranavbalaji.me/project/ray-tracing/images/naiveraytracer_hu212c79a801deafd3b7c5a01eb9a184a4_79159_9249e3365cb68025e34516aa44cabd41.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;412&#34;
+               loading=&#34;lazy&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Naive solution
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;It uses recursion and a ray stops reflecting when it encounters a light source.
+There are two issues with this: One, GLSL (The OpenGL Shading Language) doesn&amp;rsquo;t support recursion (We can still manage to do it by using stacks but it&amp;rsquo;s going to be messy
+and too mentally taxing) and two, it&amp;rsquo;s going to take a very long time to render even if it did.
+We have to find a better solution.
+&lt;br&gt;
+Fortunately, people have already faced this issue before and have come up with elegant solutions
+&lt;br&gt;&lt;br&gt;
+We can apply Monte Carlo Integration to the integral&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-monte-carlo-integration&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Monte Carlo integration&#34; srcset=&#34;
+               /project/ray-tracing/images/equation2_hu5fd9843e3d69564a612ccf188a04a566_12377_78f834e6b17988130d97628f9f199e25.webp 400w,
+               /project/ray-tracing/images/equation2_hu5fd9843e3d69564a612ccf188a04a566_12377_faa1b886303ea3ba604e4c42aaea3866.webp 760w,
+               /project/ray-tracing/images/equation2_hu5fd9843e3d69564a612ccf188a04a566_12377_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://pranavbalaji.me/project/ray-tracing/images/equation2_hu5fd9843e3d69564a612ccf188a04a566_12377_78f834e6b17988130d97628f9f199e25.webp&#34;
+               width=&#34;610&#34;
+               height=&#34;89&#34;
+               loading=&#34;lazy&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Monte Carlo integration
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;It now reduces to a simple iterative fraction addition. This can be easily achieved using Blending methods in OpenGl and varying the alpha
+(transparency) value of each pixel after each frame of iteration. Then, instead of exactly calculating every single pixel value of each farme exactly, we can instead use
+randomized distribution as our main crutch. One single frame using randomized values would look horrible, but an accumulated iteration of slowly dimishing samples
+will drag the image into an eventually photorealistic image because we are increasing the N frame by frame. It will again be quite time intensive to reach enough frames to
+see good results, but much less than the theoretical requirement.
+&lt;br&gt;
+Next, we have to define a BRDF.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-brdf&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;BRDF&#34; srcset=&#34;
+               /project/ray-tracing/images/newBrdf_hudb9baeb99db852096ade5acbac80f96b_9582_01f9fe81bcc5a9d16affdd09ba45f860.webp 400w,
+               /project/ray-tracing/images/newBrdf_hudb9baeb99db852096ade5acbac80f96b_9582_4dde24f714cfe1a33869c402bd623b67.webp 760w,
+               /project/ray-tracing/images/newBrdf_hudb9baeb99db852096ade5acbac80f96b_9582_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://pranavbalaji.me/project/ray-tracing/images/newBrdf_hudb9baeb99db852096ade5acbac80f96b_9582_01f9fe81bcc5a9d16affdd09ba45f860.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;147&#34;
+               loading=&#34;lazy&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      BRDF
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;The first term represents diffuse reflection and the second, specular reflection. kd is the albedo of the surface and ks is the specular. (They control the strengths of
+these types of reflections). In the case of specular reflection, we also have wr and alpha. wr is just the perfectly reflected ray, and alpha works like this:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-effect-of-alpha&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Effect of alpha&#34;
+           src=&#34;https://pranavbalaji.me/project/ray-tracing/images/alpha.gif&#34;
+           loading=&#34;lazy&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Effect of alpha
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;As you can see, it controls the spread of the specular (mirror-like) reflection&lt;/p&gt;
+&lt;h1 id=&#34;piecing-things-together&#34;&gt;Piecing things together&lt;/h1&gt;
+&lt;p&gt;Now that we have our code, it&amp;rsquo;s time to see what it can do&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-first-frame&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;First frame&#34; srcset=&#34;
+               /project/ray-tracing/images/example1frame1_hu79fb09939a0265936cb888d8eb16fb65_1075393_c3252c4e484cacf9027081b53a8bf4bd.webp 400w,
+               /project/ray-tracing/images/example1frame1_hu79fb09939a0265936cb888d8eb16fb65_1075393_3081369de8af6cd50d9bf2270ac1ee28.webp 760w,
+               /project/ray-tracing/images/example1frame1_hu79fb09939a0265936cb888d8eb16fb65_1075393_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://pranavbalaji.me/project/ray-tracing/images/example1frame1_hu79fb09939a0265936cb888d8eb16fb65_1075393_c3252c4e484cacf9027081b53a8bf4bd.webp&#34;
+               width=&#34;755&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      First frame
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;Well, the first frame looks horrible, as expected. If we let it run for a while and let the Monte Carlo summation do its magic, we get:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-frame-after-around-50-iterations&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;images/example1framen.pn&#34; alt=&#34;Frame after around 50 iterations&#34; loading=&#34;lazy&#34;  /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Frame after around 50 iterations
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;Sick. Let&amp;rsquo;s break down the scene:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-labelled-scene&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Labelled scene&#34; srcset=&#34;
+               /project/ray-tracing/images/example1explanation_huc558aa8d1e2eefb4e74a2b87b387ee28_826583_7d0c437916eef83cbe4ee003c7ea6de8.webp 400w,
+               /project/ray-tracing/images/example1explanation_huc558aa8d1e2eefb4e74a2b87b387ee28_826583_f19c6d94d75912a29434e9479f3ac44b.webp 760w,
+               /project/ray-tracing/images/example1explanation_huc558aa8d1e2eefb4e74a2b87b387ee28_826583_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://pranavbalaji.me/project/ray-tracing/images/example1explanation_huc558aa8d1e2eefb4e74a2b87b387ee28_826583_7d0c437916eef83cbe4ee003c7ea6de8.webp&#34;
+               width=&#34;757&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Labelled scene
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;If we make the ground a perfect mirror, (set alpha very high):&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-very-reflective-ground&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Very reflective ground&#34; srcset=&#34;
+               /project/ray-tracing/images/example2_huc875b19f90d603f978ccf66fb6f9dd6a_829556_397da393c52180171f7a256df500c4e3.webp 400w,
+               /project/ray-tracing/images/example2_huc875b19f90d603f978ccf66fb6f9dd6a_829556_75a8321fdf28f76566366ecbdd4ca485.webp 760w,
+               /project/ray-tracing/images/example2_huc875b19f90d603f978ccf66fb6f9dd6a_829556_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://pranavbalaji.me/project/ray-tracing/images/example2_huc875b19f90d603f978ccf66fb6f9dd6a_829556_397da393c52180171f7a256df500c4e3.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;758&#34;
+               loading=&#34;lazy&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Very reflective ground
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;If we make the ground non reflective:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-diffuse-ground&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Diffuse ground&#34; srcset=&#34;
+               /project/ray-tracing/images/example3_hucc1d82315e0bd27c5eb249d97b0f2d0e_1102826_d83431f818f06cb0c44a3ade666f0cb9.webp 400w,
+               /project/ray-tracing/images/example3_hucc1d82315e0bd27c5eb249d97b0f2d0e_1102826_6ee3222c9f01f3999d049f9b99529d42.webp 760w,
+               /project/ray-tracing/images/example3_hucc1d82315e0bd27c5eb249d97b0f2d0e_1102826_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://pranavbalaji.me/project/ray-tracing/images/example3_hucc1d82315e0bd27c5eb249d97b0f2d0e_1102826_d83431f818f06cb0c44a3ade666f0cb9.webp&#34;
+               width=&#34;757&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Diffuse ground
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;Right now, the skybox is acting as a light source with a non-zero emission value. If we make that 0, we get to see the smaller light sources in action:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-dark-skybox&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Dark skybox&#34; srcset=&#34;
+               /project/ray-tracing/images/example4_hu5b3b84c76d447623f04a0841132ef328_649447_1a9c4e05c870f0584d95ab3c1403f5ad.webp 400w,
+               /project/ray-tracing/images/example4_hu5b3b84c76d447623f04a0841132ef328_649447_63c718ecc4def7456d5edd612b6972fd.webp 760w,
+               /project/ray-tracing/images/example4_hu5b3b84c76d447623f04a0841132ef328_649447_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://pranavbalaji.me/project/ray-tracing/images/example4_hu5b3b84c76d447623f04a0841132ef328_649447_1a9c4e05c870f0584d95ab3c1403f5ad.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;757&#34;
+               loading=&#34;lazy&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Dark skybox
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;We can even make the ground emissive:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-weakly-emissive-ground-emitting-an-rgb-of-02-01-01&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Weakly emissive ground emitting an RGB of (0.2, 0.1, 0.1)&#34; srcset=&#34;
+               /project/ray-tracing/images/example5_huaaf655b40d814d9fde5c906b978c50e6_696060_3d646cc4f96243b7a079a82dd20ccb17.webp 400w,
+               /project/ray-tracing/images/example5_huaaf655b40d814d9fde5c906b978c50e6_696060_b14b2f82d7ccbd50f190c86f6cc4b3f8.webp 760w,
+               /project/ray-tracing/images/example5_huaaf655b40d814d9fde5c906b978c50e6_696060_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://pranavbalaji.me/project/ray-tracing/images/example5_huaaf655b40d814d9fde5c906b978c50e6_696060_3d646cc4f96243b7a079a82dd20ccb17.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;757&#34;
+               loading=&#34;lazy&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Weakly emissive ground emitting an RGB of (0.2, 0.1, 0.1)
+    &lt;/figcaption&gt;&lt;/figure&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Anime Recommender System</title>
-      <link>https://greenfish8090.github.io/project/recommender/</link>
-      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://greenfish8090.github.io/project/recommender/</guid>
+      <link>https://pranavbalaji.me/project/anime-recommender-system/</link>
+      <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://pranavbalaji.me/project/anime-recommender-system/</guid>
       <description>&lt;p&gt;We often find ourselves wondering what show/movie to watch next after we&amp;rsquo;ve just finished an amazing one. If it&amp;rsquo;s on Netflix, it always has something ready for us under the &amp;ldquo;similar users have liked&amp;hellip;&amp;rdquo; section. But how does it do it exactly?&lt;br&gt;
 &lt;br&gt;
 Netflix, along with most popular content streaming sites, employ what&amp;rsquo;s called a recommender system with the primary goal of serving personalized recommendations to users. Broadly, based on its working, it can be classified into two types (Although in practice, it&amp;rsquo;s usually a mix of them):&lt;/p&gt;
@@ -80,9 +810,9 @@ I&amp;rsquo;ve tested it with my friends and myself, the predictions were rather
     
     <item>
       <title>Ant Miner</title>
-      <link>https://greenfish8090.github.io/project/emotion-recog/</link>
-      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://greenfish8090.github.io/project/emotion-recog/</guid>
+      <link>https://pranavbalaji.me/project/emotion-recog/</link>
+      <pubDate>Sun, 28 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://pranavbalaji.me/project/emotion-recog/</guid>
       <description>&lt;p&gt;Ant Colony Optimization falls under the category of swarm intelligence algorithms, commonly used as a metaheuristic. It is, unsurprisingly, inspired from ants. The problem is formulated as a traversible field in which numerous ants are deployed. They follow a path dictated by the phermone levels and a problem-specific heuristic, in a probabilistic way. In this setting, the ants&amp;rsquo; paths are possible solutions and depending upon the quality, pheromones are updated in the field for the next batch of ants to consider. After sufficient iterations, the best solutions are taken.&lt;br&gt;
 &lt;br&gt;
 An adaptation of this system is the Ant Miner, a rule-based classifer which is commonly used for Data Mining tasks. This, along with an extension for handling continuous values called c-Ant Miner, is what was implemented in this project. The dataset used is the popular Ravdess Dataset for Emotion Recognition. Check out the code for details!&lt;/p&gt;
@@ -91,9 +821,9 @@ An adaptation of this system is the Ant Miner, a rule-based classifer which is c
     
     <item>
       <title>Continual Learning</title>
-      <link>https://greenfish8090.github.io/slides/paraphraser/</link>
+      <link>https://pranavbalaji.me/slides/paraphraser/</link>
       <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>https://greenfish8090.github.io/slides/paraphraser/</guid>
+      <guid>https://pranavbalaji.me/slides/paraphraser/</guid>
       <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
 &lt;p&gt;
 
@@ -117,7 +847,7 @@ An adaptation of this system is the Ant Miner, a rule-based classifer which is c
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0004_hud471c95c0871dfccafb4e1ca4486f823_950437_b5f62c3b7cc50d0a57379f889e21047c.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0004_hud471c95c0871dfccafb4e1ca4486f823_950437_de05363b68ed365d320bc96450670158.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0004_hud471c95c0871dfccafb4e1ca4486f823_950437_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://greenfish8090.github.io/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0004_hud471c95c0871dfccafb4e1ca4486f823_950437_b5f62c3b7cc50d0a57379f889e21047c.webp&#34;
+               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0004_hud471c95c0871dfccafb4e1ca4486f823_950437_b5f62c3b7cc50d0a57379f889e21047c.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -147,7 +877,7 @@ An adaptation of this system is the Ant Miner, a rule-based classifer which is c
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0005_hud471c95c0871dfccafb4e1ca4486f823_474768_f3ab730406665862a2978deedffce050.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0005_hud471c95c0871dfccafb4e1ca4486f823_474768_4c1dc972ecd970f88908c178bef7dc70.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0005_hud471c95c0871dfccafb4e1ca4486f823_474768_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://greenfish8090.github.io/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0005_hud471c95c0871dfccafb4e1ca4486f823_474768_f3ab730406665862a2978deedffce050.webp&#34;
+               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0005_hud471c95c0871dfccafb4e1ca4486f823_474768_f3ab730406665862a2978deedffce050.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -177,7 +907,7 @@ An adaptation of this system is the Ant Miner, a rule-based classifer which is c
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0006_hud471c95c0871dfccafb4e1ca4486f823_605581_4dfd525f9cf90e70b16dc747eae076b0.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0006_hud471c95c0871dfccafb4e1ca4486f823_605581_351860d49e81c173e5b1aff4736c6492.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0006_hud471c95c0871dfccafb4e1ca4486f823_605581_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://greenfish8090.github.io/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0006_hud471c95c0871dfccafb4e1ca4486f823_605581_4dfd525f9cf90e70b16dc747eae076b0.webp&#34;
+               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0006_hud471c95c0871dfccafb4e1ca4486f823_605581_4dfd525f9cf90e70b16dc747eae076b0.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -207,7 +937,7 @@ An adaptation of this system is the Ant Miner, a rule-based classifer which is c
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0007_hud471c95c0871dfccafb4e1ca4486f823_569369_5c954a980d2bc23c494782413b51d9b7.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0007_hud471c95c0871dfccafb4e1ca4486f823_569369_ec0201310cbc84524d09af717551de3f.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0007_hud471c95c0871dfccafb4e1ca4486f823_569369_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://greenfish8090.github.io/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0007_hud471c95c0871dfccafb4e1ca4486f823_569369_5c954a980d2bc23c494782413b51d9b7.webp&#34;
+               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0007_hud471c95c0871dfccafb4e1ca4486f823_569369_5c954a980d2bc23c494782413b51d9b7.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -237,7 +967,7 @@ An adaptation of this system is the Ant Miner, a rule-based classifer which is c
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0015_hud471c95c0871dfccafb4e1ca4486f823_898938_26e4946e61955029f28dba933bbd9503.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0015_hud471c95c0871dfccafb4e1ca4486f823_898938_fb9d83bcbb309220f63786965bcde502.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0015_hud471c95c0871dfccafb4e1ca4486f823_898938_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://greenfish8090.github.io/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0015_hud471c95c0871dfccafb4e1ca4486f823_898938_26e4946e61955029f28dba933bbd9503.webp&#34;
+               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0015_hud471c95c0871dfccafb4e1ca4486f823_898938_26e4946e61955029f28dba933bbd9503.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -267,7 +997,7 @@ An adaptation of this system is the Ant Miner, a rule-based classifer which is c
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0013_hud471c95c0871dfccafb4e1ca4486f823_645548_15744684101e753a3dd53be67e12f240.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0013_hud471c95c0871dfccafb4e1ca4486f823_645548_0f36e87c6868813793cd93d26b4c74e8.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0013_hud471c95c0871dfccafb4e1ca4486f823_645548_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://greenfish8090.github.io/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0013_hud471c95c0871dfccafb4e1ca4486f823_645548_15744684101e753a3dd53be67e12f240.webp&#34;
+               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0013_hud471c95c0871dfccafb4e1ca4486f823_645548_15744684101e753a3dd53be67e12f240.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -297,7 +1027,7 @@ An adaptation of this system is the Ant Miner, a rule-based classifer which is c
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0016_hud471c95c0871dfccafb4e1ca4486f823_827399_b1d03e20c3ebd06686a8e7ae1c6e1f57.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0016_hud471c95c0871dfccafb4e1ca4486f823_827399_977e908ac2b9e36e0723fa5bc29fd419.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0016_hud471c95c0871dfccafb4e1ca4486f823_827399_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://greenfish8090.github.io/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0016_hud471c95c0871dfccafb4e1ca4486f823_827399_b1d03e20c3ebd06686a8e7ae1c6e1f57.webp&#34;
+               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0016_hud471c95c0871dfccafb4e1ca4486f823_827399_b1d03e20c3ebd06686a8e7ae1c6e1f57.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -327,7 +1057,7 @@ An adaptation of this system is the Ant Miner, a rule-based classifer which is c
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0017_hud471c95c0871dfccafb4e1ca4486f823_533742_0136c05bd5ea3722f3fbb8f8f68b97c4.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0017_hud471c95c0871dfccafb4e1ca4486f823_533742_ccbae4b6072dfa7dc7d71397725d0805.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0017_hud471c95c0871dfccafb4e1ca4486f823_533742_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://greenfish8090.github.io/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0017_hud471c95c0871dfccafb4e1ca4486f823_533742_0136c05bd5ea3722f3fbb8f8f68b97c4.webp&#34;
+               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0017_hud471c95c0871dfccafb4e1ca4486f823_533742_0136c05bd5ea3722f3fbb8f8f68b97c4.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -357,7 +1087,7 @@ An adaptation of this system is the Ant Miner, a rule-based classifer which is c
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0018_hud471c95c0871dfccafb4e1ca4486f823_699728_ba27c5b3ea94296fd3f6840fd6fcba3b.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0018_hud471c95c0871dfccafb4e1ca4486f823_699728_bf37d5f4b40b3cdb91bd747e064290d5.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0018_hud471c95c0871dfccafb4e1ca4486f823_699728_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://greenfish8090.github.io/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0018_hud471c95c0871dfccafb4e1ca4486f823_699728_ba27c5b3ea94296fd3f6840fd6fcba3b.webp&#34;
+               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0018_hud471c95c0871dfccafb4e1ca4486f823_699728_ba27c5b3ea94296fd3f6840fd6fcba3b.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -387,7 +1117,7 @@ An adaptation of this system is the Ant Miner, a rule-based classifer which is c
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0019_hud471c95c0871dfccafb4e1ca4486f823_588788_0ff8bd4e8867568c1eaf2c010f91cf3c.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0019_hud471c95c0871dfccafb4e1ca4486f823_588788_de3f0149b57b955f80d0306e7d7bd49b.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0019_hud471c95c0871dfccafb4e1ca4486f823_588788_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://greenfish8090.github.io/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0019_hud471c95c0871dfccafb4e1ca4486f823_588788_0ff8bd4e8867568c1eaf2c010f91cf3c.webp&#34;
+               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0019_hud471c95c0871dfccafb4e1ca4486f823_588788_0ff8bd4e8867568c1eaf2c010f91cf3c.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -417,7 +1147,7 @@ An adaptation of this system is the Ant Miner, a rule-based classifer which is c
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0022_hud471c95c0871dfccafb4e1ca4486f823_543621_64caf867a3b118b6cd3b472278fd8e43.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0022_hud471c95c0871dfccafb4e1ca4486f823_543621_7086720a20ef36e524d37f06912c5ef1.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0022_hud471c95c0871dfccafb4e1ca4486f823_543621_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://greenfish8090.github.io/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0022_hud471c95c0871dfccafb4e1ca4486f823_543621_64caf867a3b118b6cd3b472278fd8e43.webp&#34;
+               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0022_hud471c95c0871dfccafb4e1ca4486f823_543621_64caf867a3b118b6cd3b472278fd8e43.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -447,7 +1177,7 @@ An adaptation of this system is the Ant Miner, a rule-based classifer which is c
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0023_hud471c95c0871dfccafb4e1ca4486f823_421015_4fd325b4ea3596ce5d264e26154e6b84.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0023_hud471c95c0871dfccafb4e1ca4486f823_421015_d77a45a4ec5746c7bc94fb3d3ba661bd.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0023_hud471c95c0871dfccafb4e1ca4486f823_421015_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://greenfish8090.github.io/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0023_hud471c95c0871dfccafb4e1ca4486f823_421015_4fd325b4ea3596ce5d264e26154e6b84.webp&#34;
+               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0023_hud471c95c0871dfccafb4e1ca4486f823_421015_4fd325b4ea3596ce5d264e26154e6b84.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -477,7 +1207,7 @@ An adaptation of this system is the Ant Miner, a rule-based classifer which is c
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0024_hud471c95c0871dfccafb4e1ca4486f823_434188_8abfdfeb748a3633abc32e501c9df486.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0024_hud471c95c0871dfccafb4e1ca4486f823_434188_f97d0fa0e4e02a5da0a71556e778549b.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0024_hud471c95c0871dfccafb4e1ca4486f823_434188_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://greenfish8090.github.io/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0024_hud471c95c0871dfccafb4e1ca4486f823_434188_8abfdfeb748a3633abc32e501c9df486.webp&#34;
+               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0024_hud471c95c0871dfccafb4e1ca4486f823_434188_8abfdfeb748a3633abc32e501c9df486.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -507,7 +1237,7 @@ An adaptation of this system is the Ant Miner, a rule-based classifer which is c
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0025_hud471c95c0871dfccafb4e1ca4486f823_460104_23a473c87f58278bf33fb16fed4bda5c.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0025_hud471c95c0871dfccafb4e1ca4486f823_460104_3ebe5ba84786d4faa6cebbc224a902e0.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0025_hud471c95c0871dfccafb4e1ca4486f823_460104_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://greenfish8090.github.io/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0025_hud471c95c0871dfccafb4e1ca4486f823_460104_23a473c87f58278bf33fb16fed4bda5c.webp&#34;
+               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0025_hud471c95c0871dfccafb4e1ca4486f823_460104_23a473c87f58278bf33fb16fed4bda5c.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -537,7 +1267,7 @@ An adaptation of this system is the Ant Miner, a rule-based classifer which is c
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0027_hud471c95c0871dfccafb4e1ca4486f823_689506_9e3a6cf45cb2411752a32d06046977a7.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0027_hud471c95c0871dfccafb4e1ca4486f823_689506_66ce74d0089c2b9fa196abd498db89e1.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0027_hud471c95c0871dfccafb4e1ca4486f823_689506_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://greenfish8090.github.io/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0027_hud471c95c0871dfccafb4e1ca4486f823_689506_9e3a6cf45cb2411752a32d06046977a7.webp&#34;
+               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0027_hud471c95c0871dfccafb4e1ca4486f823_689506_9e3a6cf45cb2411752a32d06046977a7.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -567,7 +1297,7 @@ An adaptation of this system is the Ant Miner, a rule-based classifer which is c
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0029_hud471c95c0871dfccafb4e1ca4486f823_519669_9c71bb3e61d148ecd61c2a95b0a7c0e3.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0029_hud471c95c0871dfccafb4e1ca4486f823_519669_65b722c4cdd6162133b4d1f0c1459ad0.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0029_hud471c95c0871dfccafb4e1ca4486f823_519669_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://greenfish8090.github.io/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0029_hud471c95c0871dfccafb4e1ca4486f823_519669_9c71bb3e61d148ecd61c2a95b0a7c0e3.webp&#34;
+               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0029_hud471c95c0871dfccafb4e1ca4486f823_519669_9c71bb3e61d148ecd61c2a95b0a7c0e3.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -597,7 +1327,7 @@ An adaptation of this system is the Ant Miner, a rule-based classifer which is c
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0031_hud471c95c0871dfccafb4e1ca4486f823_981977_ccd7bd19ba698aabface3d3976fa0af9.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0031_hud471c95c0871dfccafb4e1ca4486f823_981977_63675c995fc39a4bf45f1b1b508d64d3.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0031_hud471c95c0871dfccafb4e1ca4486f823_981977_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://greenfish8090.github.io/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0031_hud471c95c0871dfccafb4e1ca4486f823_981977_ccd7bd19ba698aabface3d3976fa0af9.webp&#34;
+               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0031_hud471c95c0871dfccafb4e1ca4486f823_981977_ccd7bd19ba698aabface3d3976fa0af9.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -608,9 +1338,9 @@ An adaptation of this system is the Ant Miner, a rule-based classifer which is c
     
     <item>
       <title></title>
-      <link>https://greenfish8090.github.io/admin/config.yml</link>
+      <link>https://pranavbalaji.me/admin/config.yml</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://greenfish8090.github.io/admin/config.yml</guid>
+      <guid>https://pranavbalaji.me/admin/config.yml</guid>
       <description></description>
     </item>
     
