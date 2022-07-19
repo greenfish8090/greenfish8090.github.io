@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sequence Processing | Pranav Balaji</title>
+    <link>https://greenfish8090.github.io/tag/sequence-processing/</link>
+      <atom:link href="https://greenfish8090.github.io/tag/sequence-processing/index.xml" rel="self" type="application/rss+xml" />
+    <description>Sequence Processing</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 20 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://greenfish8090.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Sequence Processing</title>
+      <link>https://greenfish8090.github.io/tag/sequence-processing/</link>
+    </image>
+    
+    <item>
+      <title>Sign Language Translation</title>
+      <link>https://greenfish8090.github.io/project/slt/</link>
+      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://greenfish8090.github.io/project/slt/</guid>
+      <description>&lt;p&gt;To better help bridge the gap between the hearing and speech impaired community and us, we sought to implement Sign Language Translation as part of our Machine Learning course.&lt;br&gt;
+&lt;br&gt;
+What most people think of when the problem is stated, is designing a model that takes in an image containing a static gesture being signed and outputs the &amp;ldquo;message&amp;rdquo; being contained in it. While it is definitely a solid first step, this is not at all representative of the real world problem.&lt;br&gt;
+&lt;br&gt;
+Most gestures in sign language are dynamic, i.e., the meaning is contained in movement.
+In essence, it is the non-trivial task of interpreting text sequences from video sequences. Moreover, like other translation problems, the input word order is usually not the same as the output word order either. Both of these reasons make this a &lt;strong&gt;sequence2sequence&lt;/strong&gt; problem.&lt;br&gt;
+&lt;br&gt;
+Of course, we had to start somewhere. Using &lt;a href=&#34;https://www.kaggle.com/datasets/grassknoted/asl-alphabet&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this&lt;/a&gt; kaggle dataset, which contains ASL images labelled with their corresponding alphabet, we fine-tuned the inception-v3 model with a simple classification task. This was fairly simple, and upon achieving satisfactory results we moved on to our main objective, video processing.&lt;br&gt;
+&lt;br&gt;
+We decided to go ahead with a transformer encoder-decoder architecture. In the domain of NLP, it almost always has a word embedding layer that serves as a look-up table for fetching the appropriate embedding vector for each word in the input. These embeddings are what are then passed through deeper layer of the encoder blocks. In our case, however, there are no words in the input. We had to somehow &amp;ldquo;embed&amp;rdquo; frames of the videos. We can&amp;rsquo;t use a similar approach since image space is continuous while lexicon space isn&amp;rsquo;t. In other words, there are (well, almost, considering the input dimensions and the discreet RGB space) infinitely many frames that can exist.&lt;br&gt;
+&lt;br&gt;
+The most natural way to embed images, is, well, through a CNN. We chose the original inception-v3 as in our previous experiment, and took the output from the penultimate layer as the embeddings. Transformers also require something called position encodings, so they were added before passing them in. As for the specific transformer architecture itself, we used the pre-trained T5-small (small, due to GPU constraints) so that we could leverage its existing German knowledge.&lt;br&gt;
+&lt;br&gt;
+We tried different configurations of hyperparameters and ran training for ~1.5 hours per config. The best configuration gave us a test BLEU score of &lt;code&gt;12.75&lt;/code&gt;. While not the best, it isn&amp;rsquo;t a very representative metric as the labelled examples had only one translation per video, and BLEU&amp;rsquo;s representativity increases with more number of semantically equivalent labels. There&amp;rsquo;s also reason to believe that with a bigger transformer model and more data, the results would be much better, as is always the case with transformers. For more technical details, check out our report!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Paraphrase Generator</title>
+      <link>https://greenfish8090.github.io/project/paraphraser/</link>
+      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://greenfish8090.github.io/project/paraphraser/</guid>
+      <description>&lt;p&gt;In the domain of Natural Language Processing, it is unheard of for models to be trained on multiple
+tasks sequentially. This is because after the first task, there is
+a significant dip in performance on the first task while training
+for the second task. This is known as catastrophic forgetting.
+Continual learning aims to combat this problem by retaining
+knowledge of previous tasks while being able to adapt to any
+new task. We utilize a loss based method called Elastic Weights Consolidation and apply it on the T5 transformer to enable it to adapt to almost any NLP task while
+being fast and memory efficient.&lt;br&gt;
+&lt;br&gt;
+Check out the slides, paper and the code on GitHub for more details!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

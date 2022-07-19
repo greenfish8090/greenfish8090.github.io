@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deep Learning | Pranav Balaji</title>
+    <link>https://greenfish8090.github.io/tag/deep-learning/</link>
+      <atom:link href="https://greenfish8090.github.io/tag/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    <description>Deep Learning</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 20 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://greenfish8090.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Deep Learning</title>
+      <link>https://greenfish8090.github.io/tag/deep-learning/</link>
+    </image>
+    
+    <item>
+      <title>Sign Language Translation</title>
+      <link>https://greenfish8090.github.io/project/slt/</link>
+      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://greenfish8090.github.io/project/slt/</guid>
+      <description>&lt;p&gt;To better help bridge the gap between the hearing and speech impaired community and us, we sought to implement Sign Language Translation as part of our Machine Learning course.&lt;br&gt;
+&lt;br&gt;
+What most people think of when the problem is stated, is designing a model that takes in an image containing a static gesture being signed and outputs the &amp;ldquo;message&amp;rdquo; being contained in it. While it is definitely a solid first step, this is not at all representative of the real world problem.&lt;br&gt;
+&lt;br&gt;
+Most gestures in sign language are dynamic, i.e., the meaning is contained in movement.
+In essence, it is the non-trivial task of interpreting text sequences from video sequences. Moreover, like other translation problems, the input word order is usually not the same as the output word order either. Both of these reasons make this a &lt;strong&gt;sequence2sequence&lt;/strong&gt; problem.&lt;br&gt;
+&lt;br&gt;
+Of course, we had to start somewhere. Using &lt;a href=&#34;https://www.kaggle.com/datasets/grassknoted/asl-alphabet&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this&lt;/a&gt; kaggle dataset, which contains ASL images labelled with their corresponding alphabet, we fine-tuned the inception-v3 model with a simple classification task. This was fairly simple, and upon achieving satisfactory results we moved on to our main objective, video processing.&lt;br&gt;
+&lt;br&gt;
+We decided to go ahead with a transformer encoder-decoder architecture. In the domain of NLP, it almost always has a word embedding layer that serves as a look-up table for fetching the appropriate embedding vector for each word in the input. These embeddings are what are then passed through deeper layer of the encoder blocks. In our case, however, there are no words in the input. We had to somehow &amp;ldquo;embed&amp;rdquo; frames of the videos. We can&amp;rsquo;t use a similar approach since image space is continuous while lexicon space isn&amp;rsquo;t. In other words, there are (well, almost, considering the input dimensions and the discreet RGB space) infinitely many frames that can exist.&lt;br&gt;
+&lt;br&gt;
+The most natural way to embed images, is, well, through a CNN. We chose the original inception-v3 as in our previous experiment, and took the output from the penultimate layer as the embeddings. Transformers also require something called position encodings, so they were added before passing them in. As for the specific transformer architecture itself, we used the pre-trained T5-small (small, due to GPU constraints) so that we could leverage its existing German knowledge.&lt;br&gt;
+&lt;br&gt;
+We tried different configurations of hyperparameters and ran training for ~1.5 hours per config. The best configuration gave us a test BLEU score of &lt;code&gt;12.75&lt;/code&gt;. While not the best, it isn&amp;rsquo;t a very representative metric as the labelled examples had only one translation per video, and BLEU&amp;rsquo;s representativity increases with more number of semantically equivalent labels. There&amp;rsquo;s also reason to believe that with a bigger transformer model and more data, the results would be much better, as is always the case with transformers. For more technical details, check out our report!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Paraphrase Generator</title>
+      <link>https://greenfish8090.github.io/project/paraphraser/</link>
+      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://greenfish8090.github.io/project/paraphraser/</guid>
+      <description>&lt;p&gt;In the domain of Natural Language Processing, it is unheard of for models to be trained on multiple
+tasks sequentially. This is because after the first task, there is
+a significant dip in performance on the first task while training
+for the second task. This is known as catastrophic forgetting.
+Continual learning aims to combat this problem by retaining
+knowledge of previous tasks while being able to adapt to any
+new task. We utilize a loss based method called Elastic Weights Consolidation and apply it on the T5 transformer to enable it to adapt to almost any NLP task while
+being fast and memory efficient.&lt;br&gt;
+&lt;br&gt;
+Check out the slides, paper and the code on GitHub for more details!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Anime Recommender System</title>
+      <link>https://greenfish8090.github.io/project/recommender/</link>
+      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://greenfish8090.github.io/project/recommender/</guid>
+      <description>&lt;p&gt;We often find ourselves wondering what show/movie to watch next after we&amp;rsquo;ve just finished an amazing one. If it&amp;rsquo;s on Netflix, it always has something ready for us under the &amp;ldquo;similar users have liked&amp;hellip;&amp;rdquo; section. But how does it do it exactly?&lt;br&gt;
+&lt;br&gt;
+Netflix, along with most popular content streaming sites, employ what&amp;rsquo;s called a recommender system with the primary goal of serving personalized recommendations to users. Broadly, based on its working, it can be classified into two types (Although in practice, it&amp;rsquo;s usually a mix of them):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Content based filtering&lt;/li&gt;
+&lt;li&gt;Collaborative filtering&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In content based filtering, items (products / movies / songs) are recommended solely based on the item&amp;rsquo;s description and your preference history. It tries to recommend items with descriptions similar to ones you&amp;rsquo;ve liked.&lt;br&gt;
+&lt;br&gt;
+On the other hand, in collaborative filtering, the engine looks at the entire userbase of the app, and recommends items based on what others similar to you have liked. For this scheme, descriptions of items are not required. This is what I&amp;rsquo;ve implemented in this project.&lt;br&gt;
+&lt;br&gt;
+The subset of the &lt;a href=&#34;https://www.kaggle.com/datasets/azathoth42/myanimelist&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dataset&lt;/a&gt; I used consists of just 3 columns: &lt;em&gt;user_id&lt;/em&gt;, &lt;em&gt;anime_id&lt;/em&gt; and &lt;em&gt;rating&lt;/em&gt;. Arranging this into a matrix with rows as anime and columns as users, its cells can be filled with the rating (between 1 and 10) that the particular user rated the anime. An important feature of this resulting 5,000 x 100,000 matrix is that it&amp;rsquo;s sparse. Very, very sparse.&lt;br&gt;
+&lt;br&gt;
+Roughly only 4.5% of the matrix is filled. Now comes our herculean task of filling in the missing values. If we achieve this, our &amp;ldquo;filled-in&amp;rdquo; values can serve as our predictions of what those users would rate those anime.&lt;br&gt;
+&lt;br&gt;
+To do this, matrix factorization can be used. The 5,000 x 100,000 dimensional sparse ratings matrix is decomposed into a 5,000 x 10 dimensional &lt;em&gt;anime_matrix&lt;/em&gt; and a 10 x 100,000 dimensional &lt;em&gt;user_matrix&lt;/em&gt;. These matrices are initialized at random, and are iteratively updated to converge them such that their product matches the original ratings matrix, wherever the ratings are available. After training, we simply multiply the two matrices and we have a whole array of predictions per user.&lt;br&gt;
+&lt;br&gt;
+I&amp;rsquo;ve tested it with my friends and myself, the predictions were rather accurate! For technical details and a walkthrough on how I went about implementing matrix factorization and generating predictions, check out the code on GitHub!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

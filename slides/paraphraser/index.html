@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  
+  
+  
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Wowchemy 5.5.0 for Hugo">
+
+  
+    <link rel="manifest" href="/manifest.webmanifest">
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="https://greenfish8090.github.io/slides/paraphraser/">
+
+  <title>Continual Learning | Pranav Balaji</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/dist/reveal.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/dist/theme/black.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" id="highlight-theme">
+
+  
+  
+  <link rel="stylesheet" href="/css/reveal_custom.min.css">
+</head>
+<body>
+
+  
+<div class="reveal">
+  <div class="slides">
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    <section>
+    
+      <h3 id="introduction">Introduction</h3>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="intro" srcset="
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0004_hud471c95c0871dfccafb4e1ca4486f823_950437_b5f62c3b7cc50d0a57379f889e21047c.webp 400w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0004_hud471c95c0871dfccafb4e1ca4486f823_950437_de05363b68ed365d320bc96450670158.webp 760w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0004_hud471c95c0871dfccafb4e1ca4486f823_950437_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0004_hud471c95c0871dfccafb4e1ca4486f823_950437_b5f62c3b7cc50d0a57379f889e21047c.webp"
+               width="760"
+               height="428"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="formalizing-forgetting">Formalizing &lsquo;forgetting&rsquo;</h3>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="ff" srcset="
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0005_hud471c95c0871dfccafb4e1ca4486f823_474768_f3ab730406665862a2978deedffce050.webp 400w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0005_hud471c95c0871dfccafb4e1ca4486f823_474768_4c1dc972ecd970f88908c178bef7dc70.webp 760w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0005_hud471c95c0871dfccafb4e1ca4486f823_474768_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0005_hud471c95c0871dfccafb4e1ca4486f823_474768_f3ab730406665862a2978deedffce050.webp"
+               width="760"
+               height="428"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="formalizing-forgetting-cont">Formalizing &lsquo;forgetting&rsquo; (Cont.)</h3>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="ffc" srcset="
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0006_hud471c95c0871dfccafb4e1ca4486f823_605581_4dfd525f9cf90e70b16dc747eae076b0.webp 400w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0006_hud471c95c0871dfccafb4e1ca4486f823_605581_351860d49e81c173e5b1aff4736c6492.webp 760w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0006_hud471c95c0871dfccafb4e1ca4486f823_605581_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0006_hud471c95c0871dfccafb4e1ca4486f823_605581_4dfd525f9cf90e70b16dc747eae076b0.webp"
+               width="760"
+               height="428"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="hypothesis">Hypothesis</h3>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="hyp" srcset="
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0007_hud471c95c0871dfccafb4e1ca4486f823_569369_5c954a980d2bc23c494782413b51d9b7.webp 400w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0007_hud471c95c0871dfccafb4e1ca4486f823_569369_ec0201310cbc84524d09af717551de3f.webp 760w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0007_hud471c95c0871dfccafb4e1ca4486f823_569369_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0007_hud471c95c0871dfccafb4e1ca4486f823_569369_5c954a980d2bc23c494782413b51d9b7.webp"
+               width="760"
+               height="428"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="dataset">Dataset</h3>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="dataset" srcset="
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0015_hud471c95c0871dfccafb4e1ca4486f823_898938_26e4946e61955029f28dba933bbd9503.webp 400w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0015_hud471c95c0871dfccafb4e1ca4486f823_898938_fb9d83bcbb309220f63786965bcde502.webp 760w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0015_hud471c95c0871dfccafb4e1ca4486f823_898938_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0015_hud471c95c0871dfccafb4e1ca4486f823_898938_26e4946e61955029f28dba933bbd9503.webp"
+               width="760"
+               height="428"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="training-setup">Training setup</h3>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="setup" srcset="
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0013_hud471c95c0871dfccafb4e1ca4486f823_645548_15744684101e753a3dd53be67e12f240.webp 400w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0013_hud471c95c0871dfccafb4e1ca4486f823_645548_0f36e87c6868813793cd93d26b4c74e8.webp 760w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0013_hud471c95c0871dfccafb4e1ca4486f823_645548_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0013_hud471c95c0871dfccafb4e1ca4486f823_645548_15744684101e753a3dd53be67e12f240.webp"
+               width="760"
+               height="428"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="training-setup-cont">Training setup (Cont.)</h3>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="setupc" srcset="
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0016_hud471c95c0871dfccafb4e1ca4486f823_827399_b1d03e20c3ebd06686a8e7ae1c6e1f57.webp 400w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0016_hud471c95c0871dfccafb4e1ca4486f823_827399_977e908ac2b9e36e0723fa5bc29fd419.webp 760w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0016_hud471c95c0871dfccafb4e1ca4486f823_827399_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0016_hud471c95c0871dfccafb4e1ca4486f823_827399_b1d03e20c3ebd06686a8e7ae1c6e1f57.webp"
+               width="760"
+               height="428"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="the-original-t5">The Original T5</h3>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="ot" srcset="
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0017_hud471c95c0871dfccafb4e1ca4486f823_533742_0136c05bd5ea3722f3fbb8f8f68b97c4.webp 400w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0017_hud471c95c0871dfccafb4e1ca4486f823_533742_ccbae4b6072dfa7dc7d71397725d0805.webp 760w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0017_hud471c95c0871dfccafb4e1ca4486f823_533742_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0017_hud471c95c0871dfccafb4e1ca4486f823_533742_0136c05bd5ea3722f3fbb8f8f68b97c4.webp"
+               width="760"
+               height="428"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="t5-on-standard-fine-tuning">T5 on standard fine-tuning</h3>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="tsf" srcset="
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0018_hud471c95c0871dfccafb4e1ca4486f823_699728_ba27c5b3ea94296fd3f6840fd6fcba3b.webp 400w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0018_hud471c95c0871dfccafb4e1ca4486f823_699728_bf37d5f4b40b3cdb91bd747e064290d5.webp 760w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0018_hud471c95c0871dfccafb4e1ca4486f823_699728_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0018_hud471c95c0871dfccafb4e1ca4486f823_699728_ba27c5b3ea94296fd3f6840fd6fcba3b.webp"
+               width="760"
+               height="428"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="t5-with-ewc-fine-tuning">T5 with EWC fine-tuning</h3>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="tewc" srcset="
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0019_hud471c95c0871dfccafb4e1ca4486f823_588788_0ff8bd4e8867568c1eaf2c010f91cf3c.webp 400w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0019_hud471c95c0871dfccafb4e1ca4486f823_588788_de3f0149b57b955f80d0306e7d7bd49b.webp 760w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0019_hud471c95c0871dfccafb4e1ca4486f823_588788_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0019_hud471c95c0871dfccafb4e1ca4486f823_588788_0ff8bd4e8867568c1eaf2c010f91cf3c.webp"
+               width="760"
+               height="428"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="results">Results</h3>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="res" srcset="
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0022_hud471c95c0871dfccafb4e1ca4486f823_543621_64caf867a3b118b6cd3b472278fd8e43.webp 400w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0022_hud471c95c0871dfccafb4e1ca4486f823_543621_7086720a20ef36e524d37f06912c5ef1.webp 760w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0022_hud471c95c0871dfccafb4e1ca4486f823_543621_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0022_hud471c95c0871dfccafb4e1ca4486f823_543621_64caf867a3b118b6cd3b472278fd8e43.webp"
+               width="760"
+               height="428"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="graphs">Graphs</h3>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="g1" srcset="
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0023_hud471c95c0871dfccafb4e1ca4486f823_421015_4fd325b4ea3596ce5d264e26154e6b84.webp 400w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0023_hud471c95c0871dfccafb4e1ca4486f823_421015_d77a45a4ec5746c7bc94fb3d3ba661bd.webp 760w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0023_hud471c95c0871dfccafb4e1ca4486f823_421015_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0023_hud471c95c0871dfccafb4e1ca4486f823_421015_4fd325b4ea3596ce5d264e26154e6b84.webp"
+               width="760"
+               height="428"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="graphs-cont">Graphs (Cont.)</h3>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="g2" srcset="
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0024_hud471c95c0871dfccafb4e1ca4486f823_434188_8abfdfeb748a3633abc32e501c9df486.webp 400w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0024_hud471c95c0871dfccafb4e1ca4486f823_434188_f97d0fa0e4e02a5da0a71556e778549b.webp 760w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0024_hud471c95c0871dfccafb4e1ca4486f823_434188_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0024_hud471c95c0871dfccafb4e1ca4486f823_434188_8abfdfeb748a3633abc32e501c9df486.webp"
+               width="760"
+               height="428"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="graphs-cont-1">Graphs (Cont.)</h3>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="g3" srcset="
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0025_hud471c95c0871dfccafb4e1ca4486f823_460104_23a473c87f58278bf33fb16fed4bda5c.webp 400w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0025_hud471c95c0871dfccafb4e1ca4486f823_460104_3ebe5ba84786d4faa6cebbc224a902e0.webp 760w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0025_hud471c95c0871dfccafb4e1ca4486f823_460104_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0025_hud471c95c0871dfccafb4e1ca4486f823_460104_23a473c87f58278bf33fb16fed4bda5c.webp"
+               width="760"
+               height="428"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="discussion-on-results">Discussion on results</h3>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="disc" srcset="
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0027_hud471c95c0871dfccafb4e1ca4486f823_689506_9e3a6cf45cb2411752a32d06046977a7.webp 400w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0027_hud471c95c0871dfccafb4e1ca4486f823_689506_66ce74d0089c2b9fa196abd498db89e1.webp 760w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0027_hud471c95c0871dfccafb4e1ca4486f823_689506_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0027_hud471c95c0871dfccafb4e1ca4486f823_689506_9e3a6cf45cb2411752a32d06046977a7.webp"
+               width="760"
+               height="428"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="conclusion">Conclusion</h3>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="conclusion" srcset="
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0029_hud471c95c0871dfccafb4e1ca4486f823_519669_9c71bb3e61d148ecd61c2a95b0a7c0e3.webp 400w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0029_hud471c95c0871dfccafb4e1ca4486f823_519669_65b722c4cdd6162133b4d1f0c1459ad0.webp 760w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0029_hud471c95c0871dfccafb4e1ca4486f823_519669_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0029_hud471c95c0871dfccafb4e1ca4486f823_519669_9c71bb3e61d148ecd61c2a95b0a7c0e3.webp"
+               width="760"
+               height="428"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h3 id="references">References</h3>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="ref" srcset="
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0031_hud471c95c0871dfccafb4e1ca4486f823_981977_ccd7bd19ba698aabface3d3976fa0af9.webp 400w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0031_hud471c95c0871dfccafb4e1ca4486f823_981977_63675c995fc39a4bf45f1b1b508d64d3.webp 760w,
+               /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0031_hud471c95c0871dfccafb4e1ca4486f823_981977_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0031_hud471c95c0871dfccafb4e1ca4486f823_981977_ccd7bd19ba698aabface3d3976fa0af9.webp"
+               width="760"
+               height="428"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+
+    </section>
+    
+
+    
+    
+  </div>
+</div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/dist/reveal.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/markdown/markdown.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/highlight/highlight.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/notes/notes.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/search/search.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/math/math.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.2.1/plugin/zoom/zoom.min.js" crossorigin="anonymous"></script>
+
+  
+  
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/plugin.js" integrity="sha256-M6JwAjnRAWmi+sbXURR/yAhWZKYhAw7YXnnLvIxrdGs=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.js" integrity="sha256-l14dklFcW5mWar6w/9KaW0fWVerf3mYr7Wt0+rXzFAA=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.css" integrity="sha256-0fU8HKLaTjgzfaV9CgSqbsN8ilA3zo6zK1M6rlgULd8=" crossorigin="anonymous">
+  
+
+  
+
+  
+  <script src="/js/wowchemy-slides.js"></script>
+
+</body>
+</html>

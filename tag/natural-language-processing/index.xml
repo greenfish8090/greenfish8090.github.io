@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Natural Language Processing | Pranav Balaji</title>
+    <link>https://greenfish8090.github.io/tag/natural-language-processing/</link>
+      <atom:link href="https://greenfish8090.github.io/tag/natural-language-processing/index.xml" rel="self" type="application/rss+xml" />
+    <description>Natural Language Processing</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 20 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://greenfish8090.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Natural Language Processing</title>
+      <link>https://greenfish8090.github.io/tag/natural-language-processing/</link>
+    </image>
+    
+    <item>
+      <title>Paraphrase Generator</title>
+      <link>https://greenfish8090.github.io/project/paraphraser/</link>
+      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://greenfish8090.github.io/project/paraphraser/</guid>
+      <description>&lt;p&gt;In the domain of Natural Language Processing, it is unheard of for models to be trained on multiple
+tasks sequentially. This is because after the first task, there is
+a significant dip in performance on the first task while training
+for the second task. This is known as catastrophic forgetting.
+Continual learning aims to combat this problem by retaining
+knowledge of previous tasks while being able to adapt to any
+new task. We utilize a loss based method called Elastic Weights Consolidation and apply it on the T5 transformer to enable it to adapt to almost any NLP task while
+being fast and memory efficient.&lt;br&gt;
+&lt;br&gt;
+Check out the slides, paper and the code on GitHub for more details!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

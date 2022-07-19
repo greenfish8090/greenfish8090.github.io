@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bio-inspired algorithms | Pranav Balaji</title>
+    <link>https://greenfish8090.github.io/tag/bio-inspired-algorithms/</link>
+      <atom:link href="https://greenfish8090.github.io/tag/bio-inspired-algorithms/index.xml" rel="self" type="application/rss+xml" />
+    <description>Bio-inspired algorithms</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 20 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://greenfish8090.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Bio-inspired algorithms</title>
+      <link>https://greenfish8090.github.io/tag/bio-inspired-algorithms/</link>
+    </image>
+    
+    <item>
+      <title>Ant Miner</title>
+      <link>https://greenfish8090.github.io/project/emotion-recog/</link>
+      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://greenfish8090.github.io/project/emotion-recog/</guid>
+      <description>&lt;p&gt;Ant Colony Optimization falls under the category of swarm intelligence algorithms, commonly used as a metaheuristic. It is, unsurprisingly, inspired from ants. The problem is formulated as a traversible field in which numerous ants are deployed. They follow a path dictated by the phermone levels and a problem-specific heuristic, in a probabilistic way. In this setting, the ants&amp;rsquo; paths are possible solutions and depending upon the quality, pheromones are updated in the field for the next batch of ants to consider. After sufficient iterations, the best solutions are taken.&lt;br&gt;
+&lt;br&gt;
+An adaptation of this system is the Ant Miner, a rule-based classifer which is commonly used for Data Mining tasks. This, along with an extension for handling continuous values called c-Ant Miner, is what was implemented in this project. The dataset used is the popular Ravdess Dataset for Emotion Recognition. Check out the code for details!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
