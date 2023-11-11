@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publications | Pranav Balaji</title>
-    <link>https://pranavbalaji.me/publication/</link>
-      <atom:link href="https://pranavbalaji.me/publication/index.xml" rel="self" type="application/rss+xml" />
-    <description>Publications</description>
+    <title>1 | Pranav Balaji</title>
+    <link>https://pranavbalaji.me/publication-type/1/</link>
+      <atom:link href="https://pranavbalaji.me/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
+    <description>1</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 02 Oct 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://pranavbalaji.me/media/icon_hu4c4ccb377aa000bcc0828e3460554857_12725_512x512_fill_lanczos_center_3.png</url>
-      <title>Publications</title>
-      <link>https://pranavbalaji.me/publication/</link>
+      <title>1</title>
+      <link>https://pranavbalaji.me/publication-type/1/</link>
     </image>
     
     <item>

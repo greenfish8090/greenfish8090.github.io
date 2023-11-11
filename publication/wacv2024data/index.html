@@ -64,10 +64,10 @@
   
     
   
-  <meta name="description" content="Pranav Balaji&#39;s website" />
+  <meta name="description" content="This paper shows that jointly optimizing ViTs for the primary task and a Self-Supervised Auxiliary Task is surprisingly beneficial when the amount of training data is limited." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://pranavbalaji.me/tag/machine-translation/" />
+  <link rel="alternate" hreflang="en-us" href="https://pranavbalaji.me/publication/wacv2024data/" />
 
   
   
@@ -274,8 +274,6 @@
   
 
   
-    <link rel="alternate" href="/tag/machine-translation/index.xml" type="application/rss+xml" title="Pranav Balaji" />
-  
 
   
     <link rel="manifest" href="/manifest.webmanifest" />
@@ -284,7 +282,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu4c4ccb377aa000bcc0828e3460554857_12725_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu4c4ccb377aa000bcc0828e3460554857_12725_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://pranavbalaji.me/tag/machine-translation/" />
+  <link rel="canonical" href="https://pranavbalaji.me/publication/wacv2024data/" />
 
   
   
@@ -307,33 +305,80 @@
   <meta property="twitter:card" content="summary" />
   
   <meta property="og:site_name" content="Pranav Balaji" />
-  <meta property="og:url" content="https://pranavbalaji.me/tag/machine-translation/" />
-  <meta property="og:title" content="Machine Translation | Pranav Balaji" />
-  <meta property="og:description" content="Pranav Balaji&#39;s website" /><meta property="og:image" content="https://pranavbalaji.me/media/icon_hu4c4ccb377aa000bcc0828e3460554857_12725_512x512_fill_lanczos_center_3.png" />
+  <meta property="og:url" content="https://pranavbalaji.me/publication/wacv2024data/" />
+  <meta property="og:title" content="Limited Data, Unlimited Potential: A Study on ViTs Augmented by Masked Autoencoders | Pranav Balaji" />
+  <meta property="og:description" content="This paper shows that jointly optimizing ViTs for the primary task and a Self-Supervised Auxiliary Task is surprisingly beneficial when the amount of training data is limited." /><meta property="og:image" content="https://pranavbalaji.me/media/icon_hu4c4ccb377aa000bcc0828e3460554857_12725_512x512_fill_lanczos_center_3.png" />
     <meta property="twitter:image" content="https://pranavbalaji.me/media/icon_hu4c4ccb377aa000bcc0828e3460554857_12725_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
-      <meta property="og:updated_time" content="2022-04-20T00:00:00&#43;00:00" />
+      <meta
+        property="article:published_time"
+        content="2023-01-01T00:00:00&#43;00:00"
+      />
     
+    <meta property="article:modified_time" content="2023-01-01T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://pranavbalaji.me/publication/wacv2024data/"
+  },
+  "headline": "Limited Data, Unlimited Potential: A Study on ViTs Augmented by Masked Autoencoders",
+  
+  "datePublished": "2023-01-01T00:00:00Z",
+  "dateModified": "2023-01-01T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Srijan Das"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pranav Balaji",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://pranavbalaji.me/media/icon_hu4c4ccb377aa000bcc0828e3460554857_12725_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "This paper shows that jointly optimizing ViTs for the primary task and a Self-Supervised Auxiliary Task is surprisingly beneficial when the amount of training data is limited."
+}
+</script>
+
+  
+
+  
+
   
 
   
 
 
 
-  
-
-  
 
 
-
-
-
-  <title>Machine Translation | Pranav Balaji</title>
+  <title>Limited Data, Unlimited Potential: A Study on ViTs Augmented by Masked Autoencoders | Pranav Balaji</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  dark "  >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  dark " data-wc-page-id="cf63bd87017021824533e205391fa739" >
 
   
   
@@ -698,155 +743,368 @@
 
 
 
+<div class="pub">
+
+  
+
+
+
+
+
+
+
+
 
 
 
 
   
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Limited Data, Unlimited Potential: A Study on ViTs Augmented by Masked Autoencoders</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      Srijan Das</span>, <span >
+      Tanmay Jain</span>, <span >
+      Dominick Reilly</span>, <span class="author-highlighted">
+      Pranav Balaji</span>, <span >
+      Soumyajit Karmakar</span>, <span >
+      Shyam Marjit</span>, <span >
+      Xiang Li</span>, <span >
+      Abhijit Das</span>, <span >
+      Michael S Ryoo</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    January, 2023
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
   
   
     
   
-<div class="universal-wrapper pt-3">
-  <h1>Machine Translation</h1>
-
   
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header" href="https://arxiv.org/abs/2310.20704" target="_blank" rel="noopener">
+    arXiv</a>
+
+
+</div>
+
 
   
 </div>
 
 
 
-<div class="universal-wrapper">
-  
-
-  
-  
-    
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item view-compact">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/project/sign-language-translation/" >Sign Language Translation</a>
-    </div>
+  <div class="article-container">
 
     
-    <a href="/project/sign-language-translation/"  class="summary-link">
-      <div class="article-style">
-        A transformer model that takes in video sequences signed in German Sign Language and translates them into readable German text
+    <h3>Abstract</h3>
+    <p class="pub-abstract">Vision Transformers (ViTs) have become ubiquitous in computer vision. Despite their success, ViTs lack inductive biases, which can make it difficult to train them with limited data. To address this challenge, prior studies suggest training ViTs with self-supervised learning (SSL) and fine-tuning sequentially. However, we observe that jointly optimizing ViTs for the primary task and a Self-Supervised Auxiliary Task (SSAT) is surprisingly beneficial when the amount of training data is limited. We explore the appropriate SSL tasks that can be optimized alongside the primary task, the training schemes for these tasks, and the data scale at which they can be most effective. Our findings reveal that SSAT is a powerful technique that enables ViTs to leverage the unique characteristics of both the self-supervised and primary tasks, achieving better performance than typical ViT pre-training with SSL and fine-tuning sequentially. Our experiments, conducted on 10 datasets, demonstrate that SSAT significantly improves ViT performance while reducing carbon footprint. We also confirm the effectiveness of SSAT in the video domain for deepfake detection, showcasing its generalizability.</p>
+    
+
+    
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-9">
+            <a href="/publication/#1">
+              Conference paper
+            </a>
+          </div>
+        </div>
       </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
+      <div class="col-md-1"></div>
     </div>
+    <div class="d-md-none space-below"></div>
+    
 
     
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/greenfish8090/Sign-Language-Translation" target="_blank" rel="noopener">
-    <i class="fab fa-github mr-1"></i>Code</a>
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-    
-      
-    
-  
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/uploads/Sign_Language_Translation.pdf" >
-    <i class="fas fa-note-sticky mr-1"></i>Paper</a>
-
-
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
+          <div class="col-12 col-md-9">In <em>Winter Conference on Applications of Computer Vision 2024</em></div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
     </div>
+    <div class="d-md-none space-below"></div>
     
 
-  </div>
-  <div class="ml-3">
+    <div class="space-below"></div>
+
+    <div class="article-style"></div>
+
     
+
+
+
+
+
+
+<div class="share-box">
+  <ul class="share">
     
-    
-    <a href="/project/sign-language-translation/" >
-      <img src="/project/sign-language-translation/featured_huf614726cb45098ad955c981bcd71a64a_103706_150x0_resize_q75_h2_lanczos.webp" height="100" width="150"
-           alt="Sign Language Translation" loading="lazy">
-    </a>
-    
-  </div>
+  </ul>
 </div>
 
+
+
+
+
+
+
+
+
+
+
   
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://pranavbalaji.me/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_huef9647720aa14698f5c4ce8f5eb30b08_264348_270x270_fill_lanczos_center_3.png" alt="Pranav Balaji"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://pranavbalaji.me/">Pranav Balaji</a></h5>
+      <h6 class="card-subtitle">Co Founder of Verbalia</h6>
+      <p class="card-text">My interests include deep learning, entrepreneurship and scuba diving.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:pranavbalaji2@gmail.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/greenfish8090" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/pranav-balaji-6538471b2/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/uploads/Pranav_Resume_Nov23.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
 
   
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
 </div>
   </div>
 
