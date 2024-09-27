@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Recommender system | Pranav Balaji</title>
-    <link>https://pranavbalaji.me/tag/recommender-system/</link>
-      <atom:link href="https://pranavbalaji.me/tag/recommender-system/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://pranavbalaji.com/tag/recommender-system/</link>
+      <atom:link href="https://pranavbalaji.com/tag/recommender-system/index.xml" rel="self" type="application/rss+xml" />
     <description>Recommender system</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 17 Nov 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://pranavbalaji.me/media/icon_hu4c4ccb377aa000bcc0828e3460554857_12725_512x512_fill_lanczos_center_3.png</url>
+      <url>https://pranavbalaji.com/media/icon_hu4c4ccb377aa000bcc0828e3460554857_12725_512x512_fill_lanczos_center_3.png</url>
       <title>Recommender system</title>
-      <link>https://pranavbalaji.me/tag/recommender-system/</link>
+      <link>https://pranavbalaji.com/tag/recommender-system/</link>
     </image>
     
     <item>
       <title>Anime Recommender System</title>
-      <link>https://pranavbalaji.me/project/anime-recommender-system/</link>
+      <link>https://pranavbalaji.com/project/anime-recommender-system/</link>
       <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
-      <guid>https://pranavbalaji.me/project/anime-recommender-system/</guid>
+      <guid>https://pranavbalaji.com/project/anime-recommender-system/</guid>
       <description>&lt;p&gt;We often find ourselves wondering what show/movie to watch next after we&amp;rsquo;ve just finished an amazing one. If it&amp;rsquo;s on Netflix, it always has something ready for us under the &amp;ldquo;similar users have liked&amp;hellip;&amp;rdquo; section. But how does it do it exactly?&lt;br&gt;
 &lt;br&gt;
 Netflix, along with most popular content streaming sites, employ what&amp;rsquo;s called a recommender system with the primary goal of serving personalized recommendations to users. Broadly, based on its working, it can be classified into two types (Although in practice, it&amp;rsquo;s usually a mix of them):&lt;/p&gt;

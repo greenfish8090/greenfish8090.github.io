@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Natural Language Generation | Pranav Balaji</title>
-    <link>https://pranavbalaji.me/tag/natural-language-generation/</link>
-      <atom:link href="https://pranavbalaji.me/tag/natural-language-generation/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://pranavbalaji.com/tag/natural-language-generation/</link>
+      <atom:link href="https://pranavbalaji.com/tag/natural-language-generation/index.xml" rel="self" type="application/rss+xml" />
     <description>Natural Language Generation</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 20 Apr 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://pranavbalaji.me/media/icon_hu4c4ccb377aa000bcc0828e3460554857_12725_512x512_fill_lanczos_center_3.png</url>
+      <url>https://pranavbalaji.com/media/icon_hu4c4ccb377aa000bcc0828e3460554857_12725_512x512_fill_lanczos_center_3.png</url>
       <title>Natural Language Generation</title>
-      <link>https://pranavbalaji.me/tag/natural-language-generation/</link>
+      <link>https://pranavbalaji.com/tag/natural-language-generation/</link>
     </image>
     
     <item>
       <title>Sign Language Translation</title>
-      <link>https://pranavbalaji.me/project/sign-language-translation/</link>
+      <link>https://pranavbalaji.com/project/sign-language-translation/</link>
       <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://pranavbalaji.me/project/sign-language-translation/</guid>
+      <guid>https://pranavbalaji.com/project/sign-language-translation/</guid>
       <description>&lt;p&gt;To better help bridge the gap between the hearing and speech impaired community and us, we sought to implement Sign Language Translation as part of our Machine Learning course.&lt;br&gt;
 &lt;br&gt;
 What most people think of when the problem is stated, is designing a model that takes in an image containing a static gesture being signed and outputs the &amp;ldquo;message&amp;rdquo; being contained in it. While it is definitely a solid first step, this is not at all representative of the real world problem.&lt;br&gt;
@@ -36,9 +36,9 @@ We tried different configurations of hyperparameters and ran training for ~1.5 h
     
     <item>
       <title>Paraphrase Generator</title>
-      <link>https://pranavbalaji.me/project/paraphrase-generator/</link>
+      <link>https://pranavbalaji.com/project/paraphrase-generator/</link>
       <pubDate>Sun, 05 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://pranavbalaji.me/project/paraphrase-generator/</guid>
+      <guid>https://pranavbalaji.com/project/paraphrase-generator/</guid>
       <description>&lt;p&gt;In the domain of Natural Language Processing, it is unheard of for models to be trained on multiple
 tasks sequentially. This is because after the first task, there is
 a significant dip in performance on the first task while training

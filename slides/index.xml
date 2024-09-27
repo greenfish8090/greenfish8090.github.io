@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Slides | Pranav Balaji</title>
-    <link>https://pranavbalaji.me/slides/</link>
-      <atom:link href="https://pranavbalaji.me/slides/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://pranavbalaji.com/slides/</link>
+      <atom:link href="https://pranavbalaji.com/slides/index.xml" rel="self" type="application/rss+xml" />
     <description>Slides</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 05 Oct 2021 00:00:00 +0000</lastBuildDate>
     <item>
       <title>Continual Learning</title>
-      <link>https://pranavbalaji.me/slides/paraphraser/</link>
+      <link>https://pranavbalaji.com/slides/paraphraser/</link>
       <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>https://pranavbalaji.me/slides/paraphraser/</guid>
+      <guid>https://pranavbalaji.com/slides/paraphraser/</guid>
       <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
 &lt;p&gt;
 
@@ -34,7 +34,7 @@
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0004_hud471c95c0871dfccafb4e1ca4486f823_950437_b5f62c3b7cc50d0a57379f889e21047c.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0004_hud471c95c0871dfccafb4e1ca4486f823_950437_de05363b68ed365d320bc96450670158.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0004_hud471c95c0871dfccafb4e1ca4486f823_950437_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0004_hud471c95c0871dfccafb4e1ca4486f823_950437_b5f62c3b7cc50d0a57379f889e21047c.webp&#34;
+               src=&#34;https://pranavbalaji.com/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0004_hud471c95c0871dfccafb4e1ca4486f823_950437_b5f62c3b7cc50d0a57379f889e21047c.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -64,7 +64,7 @@
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0005_hud471c95c0871dfccafb4e1ca4486f823_474768_f3ab730406665862a2978deedffce050.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0005_hud471c95c0871dfccafb4e1ca4486f823_474768_4c1dc972ecd970f88908c178bef7dc70.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0005_hud471c95c0871dfccafb4e1ca4486f823_474768_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0005_hud471c95c0871dfccafb4e1ca4486f823_474768_f3ab730406665862a2978deedffce050.webp&#34;
+               src=&#34;https://pranavbalaji.com/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0005_hud471c95c0871dfccafb4e1ca4486f823_474768_f3ab730406665862a2978deedffce050.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -94,7 +94,7 @@
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0006_hud471c95c0871dfccafb4e1ca4486f823_605581_4dfd525f9cf90e70b16dc747eae076b0.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0006_hud471c95c0871dfccafb4e1ca4486f823_605581_351860d49e81c173e5b1aff4736c6492.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0006_hud471c95c0871dfccafb4e1ca4486f823_605581_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0006_hud471c95c0871dfccafb4e1ca4486f823_605581_4dfd525f9cf90e70b16dc747eae076b0.webp&#34;
+               src=&#34;https://pranavbalaji.com/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0006_hud471c95c0871dfccafb4e1ca4486f823_605581_4dfd525f9cf90e70b16dc747eae076b0.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -124,7 +124,7 @@
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0007_hud471c95c0871dfccafb4e1ca4486f823_569369_5c954a980d2bc23c494782413b51d9b7.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0007_hud471c95c0871dfccafb4e1ca4486f823_569369_ec0201310cbc84524d09af717551de3f.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0007_hud471c95c0871dfccafb4e1ca4486f823_569369_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0007_hud471c95c0871dfccafb4e1ca4486f823_569369_5c954a980d2bc23c494782413b51d9b7.webp&#34;
+               src=&#34;https://pranavbalaji.com/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0007_hud471c95c0871dfccafb4e1ca4486f823_569369_5c954a980d2bc23c494782413b51d9b7.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -154,7 +154,7 @@
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0015_hud471c95c0871dfccafb4e1ca4486f823_898938_26e4946e61955029f28dba933bbd9503.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0015_hud471c95c0871dfccafb4e1ca4486f823_898938_fb9d83bcbb309220f63786965bcde502.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0015_hud471c95c0871dfccafb4e1ca4486f823_898938_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0015_hud471c95c0871dfccafb4e1ca4486f823_898938_26e4946e61955029f28dba933bbd9503.webp&#34;
+               src=&#34;https://pranavbalaji.com/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0015_hud471c95c0871dfccafb4e1ca4486f823_898938_26e4946e61955029f28dba933bbd9503.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -184,7 +184,7 @@
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0013_hud471c95c0871dfccafb4e1ca4486f823_645548_15744684101e753a3dd53be67e12f240.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0013_hud471c95c0871dfccafb4e1ca4486f823_645548_0f36e87c6868813793cd93d26b4c74e8.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0013_hud471c95c0871dfccafb4e1ca4486f823_645548_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0013_hud471c95c0871dfccafb4e1ca4486f823_645548_15744684101e753a3dd53be67e12f240.webp&#34;
+               src=&#34;https://pranavbalaji.com/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0013_hud471c95c0871dfccafb4e1ca4486f823_645548_15744684101e753a3dd53be67e12f240.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -214,7 +214,7 @@
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0016_hud471c95c0871dfccafb4e1ca4486f823_827399_b1d03e20c3ebd06686a8e7ae1c6e1f57.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0016_hud471c95c0871dfccafb4e1ca4486f823_827399_977e908ac2b9e36e0723fa5bc29fd419.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0016_hud471c95c0871dfccafb4e1ca4486f823_827399_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0016_hud471c95c0871dfccafb4e1ca4486f823_827399_b1d03e20c3ebd06686a8e7ae1c6e1f57.webp&#34;
+               src=&#34;https://pranavbalaji.com/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0016_hud471c95c0871dfccafb4e1ca4486f823_827399_b1d03e20c3ebd06686a8e7ae1c6e1f57.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -244,7 +244,7 @@
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0017_hud471c95c0871dfccafb4e1ca4486f823_533742_0136c05bd5ea3722f3fbb8f8f68b97c4.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0017_hud471c95c0871dfccafb4e1ca4486f823_533742_ccbae4b6072dfa7dc7d71397725d0805.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0017_hud471c95c0871dfccafb4e1ca4486f823_533742_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0017_hud471c95c0871dfccafb4e1ca4486f823_533742_0136c05bd5ea3722f3fbb8f8f68b97c4.webp&#34;
+               src=&#34;https://pranavbalaji.com/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0017_hud471c95c0871dfccafb4e1ca4486f823_533742_0136c05bd5ea3722f3fbb8f8f68b97c4.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -274,7 +274,7 @@
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0018_hud471c95c0871dfccafb4e1ca4486f823_699728_ba27c5b3ea94296fd3f6840fd6fcba3b.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0018_hud471c95c0871dfccafb4e1ca4486f823_699728_bf37d5f4b40b3cdb91bd747e064290d5.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0018_hud471c95c0871dfccafb4e1ca4486f823_699728_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0018_hud471c95c0871dfccafb4e1ca4486f823_699728_ba27c5b3ea94296fd3f6840fd6fcba3b.webp&#34;
+               src=&#34;https://pranavbalaji.com/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0018_hud471c95c0871dfccafb4e1ca4486f823_699728_ba27c5b3ea94296fd3f6840fd6fcba3b.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -304,7 +304,7 @@
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0019_hud471c95c0871dfccafb4e1ca4486f823_588788_0ff8bd4e8867568c1eaf2c010f91cf3c.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0019_hud471c95c0871dfccafb4e1ca4486f823_588788_de3f0149b57b955f80d0306e7d7bd49b.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0019_hud471c95c0871dfccafb4e1ca4486f823_588788_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0019_hud471c95c0871dfccafb4e1ca4486f823_588788_0ff8bd4e8867568c1eaf2c010f91cf3c.webp&#34;
+               src=&#34;https://pranavbalaji.com/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0019_hud471c95c0871dfccafb4e1ca4486f823_588788_0ff8bd4e8867568c1eaf2c010f91cf3c.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -334,7 +334,7 @@
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0022_hud471c95c0871dfccafb4e1ca4486f823_543621_64caf867a3b118b6cd3b472278fd8e43.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0022_hud471c95c0871dfccafb4e1ca4486f823_543621_7086720a20ef36e524d37f06912c5ef1.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0022_hud471c95c0871dfccafb4e1ca4486f823_543621_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0022_hud471c95c0871dfccafb4e1ca4486f823_543621_64caf867a3b118b6cd3b472278fd8e43.webp&#34;
+               src=&#34;https://pranavbalaji.com/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0022_hud471c95c0871dfccafb4e1ca4486f823_543621_64caf867a3b118b6cd3b472278fd8e43.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -364,7 +364,7 @@
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0023_hud471c95c0871dfccafb4e1ca4486f823_421015_4fd325b4ea3596ce5d264e26154e6b84.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0023_hud471c95c0871dfccafb4e1ca4486f823_421015_d77a45a4ec5746c7bc94fb3d3ba661bd.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0023_hud471c95c0871dfccafb4e1ca4486f823_421015_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0023_hud471c95c0871dfccafb4e1ca4486f823_421015_4fd325b4ea3596ce5d264e26154e6b84.webp&#34;
+               src=&#34;https://pranavbalaji.com/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0023_hud471c95c0871dfccafb4e1ca4486f823_421015_4fd325b4ea3596ce5d264e26154e6b84.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -394,7 +394,7 @@
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0024_hud471c95c0871dfccafb4e1ca4486f823_434188_8abfdfeb748a3633abc32e501c9df486.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0024_hud471c95c0871dfccafb4e1ca4486f823_434188_f97d0fa0e4e02a5da0a71556e778549b.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0024_hud471c95c0871dfccafb4e1ca4486f823_434188_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0024_hud471c95c0871dfccafb4e1ca4486f823_434188_8abfdfeb748a3633abc32e501c9df486.webp&#34;
+               src=&#34;https://pranavbalaji.com/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0024_hud471c95c0871dfccafb4e1ca4486f823_434188_8abfdfeb748a3633abc32e501c9df486.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -424,7 +424,7 @@
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0025_hud471c95c0871dfccafb4e1ca4486f823_460104_23a473c87f58278bf33fb16fed4bda5c.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0025_hud471c95c0871dfccafb4e1ca4486f823_460104_3ebe5ba84786d4faa6cebbc224a902e0.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0025_hud471c95c0871dfccafb4e1ca4486f823_460104_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0025_hud471c95c0871dfccafb4e1ca4486f823_460104_23a473c87f58278bf33fb16fed4bda5c.webp&#34;
+               src=&#34;https://pranavbalaji.com/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0025_hud471c95c0871dfccafb4e1ca4486f823_460104_23a473c87f58278bf33fb16fed4bda5c.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -454,7 +454,7 @@
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0027_hud471c95c0871dfccafb4e1ca4486f823_689506_9e3a6cf45cb2411752a32d06046977a7.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0027_hud471c95c0871dfccafb4e1ca4486f823_689506_66ce74d0089c2b9fa196abd498db89e1.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0027_hud471c95c0871dfccafb4e1ca4486f823_689506_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0027_hud471c95c0871dfccafb4e1ca4486f823_689506_9e3a6cf45cb2411752a32d06046977a7.webp&#34;
+               src=&#34;https://pranavbalaji.com/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0027_hud471c95c0871dfccafb4e1ca4486f823_689506_9e3a6cf45cb2411752a32d06046977a7.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -484,7 +484,7 @@
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0029_hud471c95c0871dfccafb4e1ca4486f823_519669_9c71bb3e61d148ecd61c2a95b0a7c0e3.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0029_hud471c95c0871dfccafb4e1ca4486f823_519669_65b722c4cdd6162133b4d1f0c1459ad0.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0029_hud471c95c0871dfccafb4e1ca4486f823_519669_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0029_hud471c95c0871dfccafb4e1ca4486f823_519669_9c71bb3e61d148ecd61c2a95b0a7c0e3.webp&#34;
+               src=&#34;https://pranavbalaji.com/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0029_hud471c95c0871dfccafb4e1ca4486f823_519669_9c71bb3e61d148ecd61c2a95b0a7c0e3.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -514,7 +514,7 @@
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0031_hud471c95c0871dfccafb4e1ca4486f823_981977_ccd7bd19ba698aabface3d3976fa0af9.webp 400w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0031_hud471c95c0871dfccafb4e1ca4486f823_981977_63675c995fc39a4bf45f1b1b508d64d3.webp 760w,
                /slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0031_hud471c95c0871dfccafb4e1ca4486f823_981977_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://pranavbalaji.me/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0031_hud471c95c0871dfccafb4e1ca4486f823_981977_ccd7bd19ba698aabface3d3976fa0af9.webp&#34;
+               src=&#34;https://pranavbalaji.com/slides/paraphraser/pages/Continual_Learning_pages-to-jpg-0031_hud471c95c0871dfccafb4e1ca4486f823_981977_ccd7bd19ba698aabface3d3976fa0af9.webp&#34;
                width=&#34;760&#34;
                height=&#34;428&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;

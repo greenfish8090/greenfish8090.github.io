@@ -1,3 +1,3 @@
 User-agent: *
 
-Sitemap: https://pranavbalaji.me/sitemap.xml
+Sitemap: https://pranavbalaji.com/sitemap.xml

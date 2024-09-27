@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications | Pranav Balaji</title>
-    <link>https://pranavbalaji.me/publication/</link>
-      <atom:link href="https://pranavbalaji.me/publication/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://pranavbalaji.com/publication/</link>
+      <atom:link href="https://pranavbalaji.com/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 02 Oct 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://pranavbalaji.me/media/icon_hu4c4ccb377aa000bcc0828e3460554857_12725_512x512_fill_lanczos_center_3.png</url>
+      <url>https://pranavbalaji.com/media/icon_hu4c4ccb377aa000bcc0828e3460554857_12725_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
-      <link>https://pranavbalaji.me/publication/</link>
+      <link>https://pranavbalaji.com/publication/</link>
     </image>
     
     <item>
       <title>Attending Generalizability in Course of Deep Fake Detection by Exploring Multi-task Learning</title>
-      <link>https://pranavbalaji.me/publication/iccvw2023deepfake/</link>
+      <link>https://pranavbalaji.com/publication/iccvw2023deepfake/</link>
       <pubDate>Mon, 02 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://pranavbalaji.me/publication/iccvw2023deepfake/</guid>
+      <guid>https://pranavbalaji.com/publication/iccvw2023deepfake/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Limited Data, Unlimited Potential: A Study on ViTs Augmented by Masked Autoencoders</title>
-      <link>https://pranavbalaji.me/publication/wacv2024data/</link>
+      <link>https://pranavbalaji.com/publication/wacv2024data/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>https://pranavbalaji.me/publication/wacv2024data/</guid>
+      <guid>https://pranavbalaji.com/publication/wacv2024data/</guid>
       <description></description>
     </item>
     

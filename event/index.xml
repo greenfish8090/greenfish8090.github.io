@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Recent &amp; Upcoming Talks | Pranav Balaji</title>
-    <link>https://pranavbalaji.me/event/</link>
-      <atom:link href="https://pranavbalaji.me/event/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://pranavbalaji.com/event/</link>
+      <atom:link href="https://pranavbalaji.com/event/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent &amp; Upcoming Talks</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
     <image>
-      <url>https://pranavbalaji.me/media/icon_hu4c4ccb377aa000bcc0828e3460554857_12725_512x512_fill_lanczos_center_3.png</url>
+      <url>https://pranavbalaji.com/media/icon_hu4c4ccb377aa000bcc0828e3460554857_12725_512x512_fill_lanczos_center_3.png</url>
       <title>Recent &amp; Upcoming Talks</title>
-      <link>https://pranavbalaji.me/event/</link>
+      <link>https://pranavbalaji.com/event/</link>
     </image>
     
   </channel>
